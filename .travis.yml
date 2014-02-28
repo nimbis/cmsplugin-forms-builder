@@ -1,0 +1,16 @@
+language: python
+python:
+  - "2.7"
+branches:
+  only:
+    - master
+    - develop
+install:
+  - make reqs
+script:
+  - make pep8
+  - make test
+  - make coverage
+  - make doc
+after_success:
+  - coveralls

@@ -1,0 +1,9 @@
+*.pyc
+*.egg
+*.egg-info
+*.sublime-project
+*.sublime-workspace
+htmlcov
+_build
+.coverage
+.DS_Store

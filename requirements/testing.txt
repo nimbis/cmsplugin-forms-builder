@@ -1,0 +1,8 @@
+-r common.txt
+
+coverage
+setuptools-pep8
+sphinx
+sphinx-rtd-theme
+coveralls
+git+https://github.com/dcramer/piplint.git#egg=piplint
