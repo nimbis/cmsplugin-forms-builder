@@ -4,6 +4,7 @@ from models import PluginForm
 from django.utils.translation import ugettext_lazy as _
 from forms_builder.forms.views import form_detail
 
+
 class FormsPlugin(CMSPluginBase):
     model = PluginForm
     render_template = "forms/form_detail.html"
