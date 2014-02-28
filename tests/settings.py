@@ -86,7 +86,8 @@ TEMPLATE_LOADERS = (
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    'django.core.context_processors.request'
+    'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -99,10 +100,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'cmsplugin_newsplus.urls'
+ROOT_URLCONF = 'cmsplugin_forms_builder.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'cmsplugin_newsplus.wsgi.application'
+WSGI_APPLICATION = 'cmsplugin_forms_builder.wsgi.application'
 
 TEMPLATE_DIRS = (
 )
@@ -117,7 +118,8 @@ INSTALLED_APPS = (
     'mptt',
     'djangocms_text_ckeditor',
     'cms',
-    'cmsplugin_newsplus',
+    'forms_builder.forms',
+    'cmsplugin_forms_builder',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
