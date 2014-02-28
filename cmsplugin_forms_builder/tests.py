@@ -1,15 +1,11 @@
-"""
-Tests for cmsplugin-forms-builder.
-"""
-
-from django.utils.timezone import utc
-import datetime
-
 from django.test import TestCase
-
 from cmsplugin_forms_builder.models import PluginForm
 
+
 class FormTest(TestCase):
+    """
+        Tests for cmsplugin-forms-builder.
+    """
 
     def setUp(self):
         pass
