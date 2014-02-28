@@ -5,8 +5,13 @@ from django.utils.translation import ugettext_lazy as _
 from forms_builder.forms.views import form_detail
 
 
-class FormsPlugin(CMSPluginBase):
+class FormBuilderPlugin(CMSPluginBase):
+    """
+        Plugin class for form-builder forms.
+    """
+
     model = PluginForm
+    name = _("Form")
     render_template = "forms/form_detail.html"
 
     def render(self, context, instance, placeholder):
@@ -14,4 +19,4 @@ class FormsPlugin(CMSPluginBase):
         return context
 
 
-plugin_pool.register_plugin(FormsPlugin)
+plugin_pool.register_plugin(FormBuilderPlugin)
