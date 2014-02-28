@@ -116,7 +116,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mptt',
-    'djangocms_text_ckeditor',
     'cms',
     'forms_builder.forms',
     'cmsplugin_forms_builder',
