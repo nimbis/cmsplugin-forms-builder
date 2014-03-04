@@ -5,7 +5,7 @@ from forms_builder.forms.models import Form
 
 class PluginForm(CMSPlugin):
     """
-    TODO.
+        Model for the plugin form.
     """
 
     form = models.ForeignKey(Form)
