@@ -1,3 +1,4 @@
 include README.rst
 include LICENSE.txt
 recursive-include cmsplugin_forms_builder/migrations *.py
+recursive-include requirements *.txt
