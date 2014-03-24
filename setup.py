@@ -12,7 +12,7 @@ print install_reqs
 # setup the project
 setup(
     name='cmsplugin-forms-builder',
-    version='0.1.1',
+    version='0.1.2',
     description='django-cms plugin for cmsplugin-forms-builder',
     long_description=open('README.rst').read(),
     author='Eric Amador',
