@@ -1,12 +1,15 @@
 django-cms plugin for django-forms-builder
 ==========================================
 
+.. image:: https://travis-ci.org/nimbis/cmsplugin-forms-builder.svg?branch=master
+    :target: https://travis-ci.org/nimbis/cmsplugin-forms-builder
+
 This plugin provides a simple means of inserting django-forms-builder forms
 as django-cms plugins.
 
 
 Requires
-----------------
+--------
 
 * django-cms >= 2.4
 * django >= 1.5
