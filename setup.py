@@ -15,7 +15,7 @@ setup(
     author='Nimbis Services, Inc.',
     author_email='devops@nimbisservices.com',
     url='https://github.com/nimbis/cmsplugin-forms-builder/',
-    packages=find_packages(),
+    packages=find_packages(exclude=["tests", ]),
     license='BSD',
     classifiers=[
         'Development Status :: 4 - Beta',

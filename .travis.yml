@@ -11,6 +11,3 @@ script:
   - make pep8
   - make test
   - make coverage
-  - make doc
-after_success:
-  - coveralls
