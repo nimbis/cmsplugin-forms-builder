@@ -3,6 +3,7 @@ from cms.plugin_pool import plugin_pool
 from models import PluginForm
 from django.utils.translation import ugettext_lazy as _
 
+
 class FormBuilderPlugin(CMSPluginBase):
     """
         Plugin class for form-builder forms.
