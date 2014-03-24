@@ -8,16 +8,15 @@ as django-cms plugins.
 Requires
 ----------------
 
-* django-cms >= 3.0
-* django >= 1.6
+* django-cms >= 2.4
+* django >= 1.5
 * django-forms-builder >= 0.10
 
 
 Setup
 -----
 
-* Download this package and run `python setup.py install` or add it in
-  some other way to your current PYTHON_PATH
+* Run `pip install cmsplugin-forms-builder` or download this package and run `python setup.py install`
 
 * Ensure 'django.contrib.messages', 'cms', 'forms_builder.forms',
   'cmsplugin_forms_builder' is in your project's INSTALLED_APPS.
