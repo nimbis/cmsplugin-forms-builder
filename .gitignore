@@ -7,3 +7,4 @@ htmlcov
 _build
 .coverage
 .DS_Store
+.pypirc
