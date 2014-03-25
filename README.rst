@@ -11,7 +11,7 @@ as django-cms plugins.
 Requires
 --------
 
-* django-cms >= 2.4
+* django-cms >= 3.0
 * django >= 1.5
 * django-forms-builder >= 0.10
 
