@@ -36,7 +36,7 @@ Setup
 History
 -------
 
-0.1.2:
+0.1.4:
 	* Fixed bug on Safari browser, make sure that 'cmsplugin_forms_builder' comes
 	  above 'forms_builder.forms' in INSTALLED_APPS.
 
