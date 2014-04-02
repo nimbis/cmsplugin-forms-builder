@@ -26,7 +26,8 @@ Setup
 * Run `pip install cmsplugin-forms-builder` or download this package and run `python setup.py install`
 
 * Ensure 'django.contrib.messages', 'cms', 'forms_builder.forms',
-  'cmsplugin_forms_builder' are in your project's INSTALLED_APPS.
+  'cmsplugin_forms_builder' are in your project's INSTALLED_APPS. 
+  _Note: 'cmsplugin_forms_builder' should be ABOVE 'forms_builder.forms' in INSTALLED_APPS._
 
 * If you're using South execute `python manage.py migrate`, Otherwise run
   `python manage.py syncdb` within your project directory.
@@ -34,6 +35,10 @@ Setup
 
 History
 -------
+
+0.1.2:
+	* Fixed bug on Safari browser, make sure that 'cmsplugin_forms_builder' comes
+	  above 'forms_builder.forms' in INSTALLED_APPS.
 
 0.1.1:
     * Fixed bugs related to imports in views.py
