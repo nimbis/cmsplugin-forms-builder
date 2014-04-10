@@ -9,7 +9,7 @@ reqs = parse_requirements("requirements/common.txt")
 # setup the project
 setup(
     name='cmsplugin-forms-builder',
-    version='0.1.5',
+    version='0.1.6',
     description='django-cms plugin for cmsplugin-forms-builder',
     long_description=open('README.rst').read(),
     author='Nimbis Services, Inc.',
