@@ -27,7 +27,6 @@ def form_sent(request, slug, template="forms/form_sent.html"):
         messages.add_message(
             request,
             messages.SUCCESS,
-            "The '{0}' form has been submitted successfully.".format(
-                form.title))
+            "The form has been submitted successfully.")
         return redirect(request.META.get('HTTP_REFERER'))
     return render_to_response(template, context, RequestContext(request))
