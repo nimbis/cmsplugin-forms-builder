@@ -44,10 +44,11 @@ doc: check-reqs
 #
 
 COVERAGE_INCLUDE='cmsplugin_forms_builder/*'
+COVERAGE_OMIT='cmsplugin_forms_builder/migrations/*'
 
 coverage: check-reqs
 	coverage erase
-	-coverage run --include=$(COVERAGE_INCLUDE) ./manage.py test
+	-coverage run --include=$(COVERAGE_INCLUDE) --omit=$(COVERAGE_OMIT) ./manage.py test
 	coverage report
 	coverage html
 	@echo "See ./htmlcov/index.html for coverage report"
