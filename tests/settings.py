@@ -122,7 +122,7 @@ INSTALLED_APPS = (
     'forms_builder.forms',
     'cmsplugin_forms_builder',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',mak
+    # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
