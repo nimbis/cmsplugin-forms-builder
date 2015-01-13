@@ -2,14 +2,16 @@
 
 from setuptools import find_packages, setup
 from pip.req import parse_requirements
+from uuid import uuid1
+
 
 # parse requirements
-reqs = parse_requirements("requirements/common.txt")
+reqs = parse_requirements("requirements/common.txt", session=uuid1())
 
 # setup the project
 setup(
     name='cmsplugin-forms-builder',
-    version='0.1.8',
+    version='0.1.9',
     description='django-cms plugin for cmsplugin-forms-builder',
     long_description=open('README.rst').read(),
     author='Nimbis Services, Inc.',
