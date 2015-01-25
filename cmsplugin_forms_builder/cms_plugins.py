@@ -1,6 +1,6 @@
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-from models import PluginForm
+from cmsplugin_forms_builder.models import PluginForm
 from django.utils.translation import ugettext_lazy as _
 
 
