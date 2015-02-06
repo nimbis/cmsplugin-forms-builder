@@ -1,3 +1,3 @@
-django<1.7
+django
 django-cms>=3.0
 django-forms-builder
