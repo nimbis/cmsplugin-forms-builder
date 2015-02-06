@@ -36,12 +36,19 @@ Setup
 History
 -------
 
+0.1.11:
+
+    * Update to Django 1.7 migrations
+
 0.1.4:
+
 	* Fixed bug on Safari browser, make sure that 'cmsplugin_forms_builder' comes
 	  above 'forms_builder.forms' in INSTALLED_APPS.
 
 0.1.1:
+
     * Fixed bugs related to imports in views.py
 
 0.1.0:
+
     * Initial commit.
