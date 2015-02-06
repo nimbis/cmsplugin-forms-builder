@@ -19,7 +19,7 @@ check-reqs: check-venv
 reqs: check-venv
 	pip install -r requirements.txt
 
-PEP8_OPTS=--repeat --exclude=static,migrations,js,doc --show-source
+PEP8_OPTS=--repeat --exclude=static,migrations,south_migrations,js,doc --show-source
 
 pep8:
 	pep8 $(PEP8_OPTS) .
