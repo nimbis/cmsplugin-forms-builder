@@ -1,0 +1,77 @@
+{% load bootstrap3 sekizai_tags %}
+
+<h3 id="form_builder_{{ form.pk }}_title">{{ form.title }}</h3>
+
+{% if form.intro %}
+<p id="form_builder_{{ form.pk }}_intro">{{ form.intro }}</p>
+{% endif %}
+
+<p id ="form_builder_{{ form.pk }}_result"></p>
+
+<form id="form_builder_{{ form.pk }}" action="{{ form.get_absolute_url }}" method="post" class="formsbuilder-form"
+{% if form_for_form.is_multipart %}enctype="multipart/form-data"{% endif %}>
+  {% csrf_token %}
+  {% bootstrap_form form_for_form %}
+  {% buttons %}
+  <input type="submit" value="{{ form.button_text }}" class="btn btn-default">
+  {% endbuttons %}
+</form>
+
+{% addtoblock 'css' %}
+<style>
+/* preserve whitespace in django-forms-builder intro and
+   post-submission messages */
+p#form_builder_{{ form.pk }}_intro,
+p#form_builder_{{ form.pk }}_result {
+  white-space: pre-line;
+}
+</style>
+{% endaddtoblock %}
+
+{% addtoblock 'js' %}
+<script>
+$(document).ready(function() {
+
+  // handle form submission via ajax
+  $("#form_builder_{{ form.pk }}").on('submit', function(e) {
+
+    var url = "{{ form.get_absolute_url }}";
+
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: $("#form_builder_{{ form.pk }}").serialize(),
+      success: function(data){
+        if($.isEmptyObject(data.errors)){
+          // no errors return by django-forms-builder
+          // hide all form elements and display success message
+          $('#form_builder_{{ form.pk }}_title').hide();
+          $('#form_builder_{{ form.pk }}_intro').hide();
+          $('#form_builder_{{ form.pk }}').hide();
+          $('#form_builder_{{ form.pk }}_result').html(data.message);
+        }
+        else {
+          // errors were returned, display them in a message
+          // at the top of the page
+
+          // create a list of error messages
+          var errors = '<ul>';
+          $.each(data.errors, function(k, v) {
+            errors += '<li>' + k + ': ' + v + '</li>';
+          });
+          errors += '</ul>'
+
+          $('form_builder_{{ form.pk }}_result').html('The following ' +
+            'errors were encountered during form submission: ' +
+            errors + '</div>');
+        }
+      }
+    });
+
+    // prevent default form POST
+    return false
+
+  });
+});
+</script>
+{% endaddtoblock 'js' %}
