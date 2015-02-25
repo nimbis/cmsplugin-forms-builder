@@ -7,7 +7,7 @@ setup(
     name='cmsplugin-forms-builder',
     version='0.1.11',
     description='django-cms plugin for cmsplugin-forms-builder',
-    long_description=open('README.rst').read(),
+    long_description=open('README.md').read(),
     author='Nimbis Services, Inc.',
     author_email='devops@nimbisservices.com',
     url='https://github.com/nimbis/cmsplugin-forms-builder/',
