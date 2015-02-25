@@ -32,14 +32,6 @@ test: check-venv clean
 	./manage.py test
 
 #
-# doc
-#
-
-doc: check-reqs
-	cd doc; make html
-	@echo "See ./doc/_build/index.html for html documentation."
-
-#
 # code coverage
 #
 
