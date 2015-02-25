@@ -18,14 +18,20 @@ as django-cms plugins.
 
 ## Setup
 
+* Verify django-cms and django-forms-builder are installed correctly.
+
 * Run `pip install cmsplugin-forms-builder` or download this package and run `python setup.py install`
 
-* Ensure 'django.contrib.messages', 'cms', 'forms_builder.forms',
-  'cmsplugin_forms_builder' are in your project's INSTALLED_APPS.
+* Add `'cmsplugin_forms_builder'` to your project's INSTALLED_APPS.
 
-* If you're using South execute `python manage.py migrate`, Otherwise run
-  `python manage.py syncdb` within your project directory.
+* If you're using Django < 1.7 in conjunction with South, make sure that your SOUTH_MIGRATION_MODULES setting contains `'cmsplugin_forms_builder': 'cmsplugin_forms_builder.south_migrations'`, like so:
 
+```
+SOUTH_MIGRATION_MODULES = {
+    # your other south migration modules...
+    'cmsplugin_forms_builder': 'cmsplugin_forms_builder.south_migrations',
+}
+```
 
 ## History
 
