@@ -1,5 +1,7 @@
-django-cms plugin for django-forms-builder
-==========================================
+cmsplugin-forms-builder
+=======================
+
+## A [django-forms-builder](https://github.com/stephenmcd/django-forms-builder) plugin for [django-cms](https://github.com/divio/django-cms)
 
 [![Build Status](https://travis-ci.org/nimbis/cmsplugin-forms-builder.svg?branch=master)](https://travis-ci.org/nimbis/cmsplugin-forms-builder)
 
