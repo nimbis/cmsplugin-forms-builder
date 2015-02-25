@@ -7,7 +7,7 @@
 [![Build Status](https://travis-ci.org/nimbis/cmsplugin-forms-builder.svg?branch=master)](https://travis-ci.org/nimbis/cmsplugin-forms-builder)
 
 This plugin provides a simple means of inserting django-forms-builder AJAX forms
-as django-cms plugins. You will need to override django-forms-builder's default `built_form.html` [template](https://github.com/stephenmcd/django-forms-builder/blob/master/forms_builder/forms/templates/forms/includes/built_form.html) in your project in order to POST the form using AJAX, which is then handled appropriately by django-forms-builder's built in views. See the sample [template]() for a better idea of how this works.
+as django-cms plugins. You will need to override django-forms-builder's default `built_form.html` [template](https://github.com/stephenmcd/django-forms-builder/blob/master/forms_builder/forms/templates/forms/includes/built_form.html) in your project in order to POST the form using AJAX, which is then handled appropriately by django-forms-builder's built in views. See the sample [template](https://github.com/nimbis/cmsplugin-forms-builder/blob/develop/sample/templates/forms/includes/built_form.html) for a better idea of how this works.
 
 
 ## Requires
@@ -34,7 +34,7 @@ SOUTH_MIGRATION_MODULES = {
 }
 ```
 
-* In order to submit your django-forms-builder forms via AJAX, you will need to override django-forms-builder's default `built_form.html` template. Since everyone's use case is different, this repository does not come with one that is guarnteed to work "out-of-the-box". However, a sample [template]() is provided to help you get started.
+* In order to submit your django-forms-builder forms via AJAX, you will need to override django-forms-builder's default `built_form.html` template. Since everyone's use case is different, this repository does not come with one that is guarnteed to work "out-of-the-box". However, a sample [template](https://github.com/nimbis/cmsplugin-forms-builder/blob/develop/sample/templates/forms/includes/built_form.html) is provided to help you get started.
 
 ## History
 
