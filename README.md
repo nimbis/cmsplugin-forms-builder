@@ -8,14 +8,14 @@
 
 [![Build Status](https://travis-ci.org/nimbis/cmsplugin-forms-builder.svg?branch=master)](https://travis-ci.org/nimbis/cmsplugin-forms-builder)
 
-This plugin provides a simple means of inserting django-forms-builder AJAX forms
+This plugin provides a simple means of inserting django-forms-builder forms
 as django-cms plugins. You will need to override django-forms-builder's default `built_form.html` [template](https://github.com/stephenmcd/django-forms-builder/blob/master/forms_builder/forms/templates/forms/includes/built_form.html) in your project in order to POST the form using AJAX, which is then handled appropriately by django-forms-builder's built in views. See the sample [template](https://github.com/nimbis/cmsplugin-forms-builder/blob/develop/sample/templates/forms/includes/built_form.html) for a better idea of how this works.
 
 
 ## Requires
 
-* django-cms >= 2.4
 * django >= 1.4
+* django-cms >= 2.4
 * django-forms-builder
 
 
@@ -40,19 +40,27 @@ SOUTH_MIGRATION_MODULES = {
 
 ## History
 
-0.1.11:
+v1.0.0:
+
+    * Removed unnecessary code in views.py and urls.py.
+    * Improved documentation in README
+    * Added screenshots and sample `build_form.html` template
+    * Fixed setup.py, no longer requires pip>=6.0
+    * Loosened requirements slightly
+
+v0.1.11:
 
     * Update to Django 1.7 migrations
 
-0.1.4:
+v0.1.4:
 
 	* Fixed bug on Safari browser, make sure that 'cmsplugin_forms_builder' comes
-	  above 'forms_builder.forms' in INSTALLED_APPS.
+	  above 'forms_builder.forms' in INSTALLED_APPS
 
-0.1.1:
+v0.1.1:
 
     * Fixed bugs related to imports in views.py
 
-0.1.0:
+v0.1.0:
 
-    * Initial commit.
+    * Initial commit
