@@ -1,7 +1,7 @@
-cmsplugin-forms-builder
-=======================
+# cmsplugin-forms-builder
 
-## A [django-forms-builder](https://github.com/stephenmcd/django-forms-builder) plugin for [django-cms](https://github.com/divio/django-cms)
+
+### A [django-forms-builder](https://github.com/stephenmcd/django-forms-builder) plugin for [django-cms](https://github.com/divio/django-cms)
 
 [![Build Status](https://travis-ci.org/nimbis/cmsplugin-forms-builder.svg?branch=master)](https://travis-ci.org/nimbis/cmsplugin-forms-builder)
 
@@ -9,16 +9,14 @@ This plugin provides a simple means of inserting django-forms-builder forms
 as django-cms plugins.
 
 
-Requires
---------
+## Requires
 
 * django-cms >= 3.0
 * django >= 1.5
 * django-forms-builder >= 0.10
 
 
-Setup
------
+## Setup
 
 * Run `pip install cmsplugin-forms-builder` or download this package and run `python setup.py install`
 
@@ -29,8 +27,7 @@ Setup
   `python manage.py syncdb` within your project directory.
 
 
-History
--------
+## History
 
 0.1.11:
 
