@@ -1,12 +1,6 @@
 #!/usr/bin/env python
 
 from setuptools import find_packages, setup
-from pip.req import parse_requirements
-from uuid import uuid1
-
-
-# parse requirements
-reqs = parse_requirements("requirements/common.txt", session=uuid1())
 
 # setup the project
 setup(
@@ -29,6 +23,10 @@ setup(
         'Framework :: Django',
     ],
     include_package_data=True,
-    install_requires=[str(x).split(' ')[0] for x in reqs],
+    install_requires=[
+        Django,
+        django-cms,
+        django-forms-builder,
+    ],
     zip_safe=False
 )

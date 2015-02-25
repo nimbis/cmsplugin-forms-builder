@@ -14,9 +14,9 @@ as django-cms plugins. You will need to override django-forms-builder's default 
 
 ## Requires
 
-* django-cms >= 3.0
-* django >= 1.5
-* django-forms-builder >= 0.10
+* django-cms >= 2.4
+* django >= 1.4
+* django-forms-builder
 
 
 ## Setup
