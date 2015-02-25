@@ -40,19 +40,27 @@ SOUTH_MIGRATION_MODULES = {
 
 ## History
 
-0.1.11:
+v1.0.0:
+
+    * Removed unnecessary code in views.py and urls.py.
+    * Improved documentation in README
+    * Added screenshots and sample `build_form.html` template
+    * Fixed setup.py, no longer requires pip>=6.0
+    * Loosened requirements slightly
+
+v0.1.11:
 
     * Update to Django 1.7 migrations
 
-0.1.4:
+v0.1.4:
 
 	* Fixed bug on Safari browser, make sure that 'cmsplugin_forms_builder' comes
-	  above 'forms_builder.forms' in INSTALLED_APPS.
+	  above 'forms_builder.forms' in INSTALLED_APPS
 
-0.1.1:
+v0.1.1:
 
     * Fixed bugs related to imports in views.py
 
-0.1.0:
+v0.1.0:
 
-    * Initial commit.
+    * Initial commit
