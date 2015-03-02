@@ -40,6 +40,10 @@ SOUTH_MIGRATION_MODULES = {
 
 ## History
 
+v1.0.1:
+
+    * Include README.md in the manifest.
+
 v1.0.0:
 
     * Removed unnecessary code in views.py and urls.py.
