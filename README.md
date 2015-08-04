@@ -25,7 +25,7 @@ as django-cms plugins. You will need to override django-forms-builder's default 
 
 * Run `pip install cmsplugin-forms-builder` or download this package and run `python setup.py install`
 
-* Add `'cmsplugin_forms_builder'` to your project's INSTALLED_APPS.
+* Add `'forms_builder.forms', 'cmsplugin_forms_builder'` to your project's INSTALLED_APPS.
 
 * If you're using Django < 1.7 in conjunction with South, make sure that your SOUTH_MIGRATION_MODULES setting contains `'cmsplugin_forms_builder': 'cmsplugin_forms_builder.south_migrations'`, like so:
 
