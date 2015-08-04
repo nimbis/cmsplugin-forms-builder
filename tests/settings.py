@@ -116,7 +116,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'menus',
-    'mptt',
+    'treebeard',
     'cms',
     'forms_builder.forms',
     'cmsplugin_forms_builder',
