@@ -12,6 +12,7 @@ class FormBuilderPlugin(CMSPluginBase):
     model = PluginForm
     name = _("Form")
     render_template = "forms/form_detail.html"
+    cache = False
 
     def render(self, context, instance, placeholder):
         context['form'] = instance.form
