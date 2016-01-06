@@ -1,8 +1,8 @@
 # cmsplugin-forms-builder
 
-![Screenshot](https://raw.githubusercontent.com/nimbis/cmsplugin-forms-builder/develop/screenshots/readme.png)
+![Screenshot](https://raw.githubusercontent.com/nimbis/cmsplugin-forms-builder/master/screenshots/readme.png)
 
-![Screenshot2](https://raw.githubusercontent.com/nimbis/cmsplugin-forms-builder/develop/screenshots/readme2.png)
+![Screenshot2](https://raw.githubusercontent.com/nimbis/cmsplugin-forms-builder/master/screenshots/readme2.png)
 
 ### A [django-forms-builder](https://github.com/stephenmcd/django-forms-builder) plugin for [django-cms](https://github.com/divio/django-cms)
 
