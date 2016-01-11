@@ -1,8 +1,8 @@
 # cmsplugin-forms-builder
 
-![Screenshot](https://raw.githubusercontent.com/nimbis/cmsplugin-forms-builder/develop/screenshots/readme.png)
+![Screenshot](https://raw.githubusercontent.com/nimbis/cmsplugin-forms-builder/master/screenshots/readme.png)
 
-![Screenshot2](https://raw.githubusercontent.com/nimbis/cmsplugin-forms-builder/develop/screenshots/readme2.png)
+![Screenshot2](https://raw.githubusercontent.com/nimbis/cmsplugin-forms-builder/master/screenshots/readme2.png)
 
 ### A [django-forms-builder](https://github.com/stephenmcd/django-forms-builder) plugin for [django-cms](https://github.com/divio/django-cms)
 
@@ -37,6 +37,12 @@ SOUTH_MIGRATION_MODULES = {
 ```
 
 * In order to submit your django-forms-builder forms via AJAX, you will need to override django-forms-builder's default `built_form.html` template. Since everyone's use case is different, this repository does not come with a predefined template in order to work "out-of-the-box". However, a sample [template](https://github.com/nimbis/cmsplugin-forms-builder/blob/develop/sample/templates/forms/includes/built_form.html) is provided to help you get started.
+
+Contributing
+------------
+
+See the [Contributing Guidelines](CONTRIBUTING.md).
+
 
 ## History
 
