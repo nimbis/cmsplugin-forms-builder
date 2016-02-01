@@ -12,7 +12,6 @@ before_script:
 script:
   - source .nifty/nifty-script
   - verify_coverage_improvement
-script:
   - make pep8
   - make flake8
   - make test
