@@ -24,7 +24,7 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        'Django',
+        'Django>=1.8',
         'django-cms',
         'django-forms-builder',
     ],
