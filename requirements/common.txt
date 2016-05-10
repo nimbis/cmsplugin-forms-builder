@@ -1,2 +1,11 @@
 django-cms>=3.0
-django-forms-builder
+
+# We originally created this fork for the "sites" repository to use
+# for an additional migration needed, (and that we recently decided
+# really should live within "sites" instead). But here, we are
+# pointing at the fork since it merges some upstream changes, (such as
+# depending on Django 1.9 not Django 1.8), that we need, and that are
+# not yet in the most recent release (which is 0.12.2 as of the time
+# of this writing).
+-e git+ssh://git@github.com/nimbis/django-forms-builder.git@master#egg=forms_builder
+
