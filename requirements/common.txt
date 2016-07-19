@@ -7,5 +7,5 @@ django-cms>=3.0
 # depending on Django 1.9 not Django 1.8), that we need, and that are
 # not yet in the most recent release (which is 0.12.2 as of the time
 # of this writing).
--e git+ssh://git@github.com/nimbis/django-forms-builder.git@master#egg=forms_builder
+-e https://github.com/nimbis/django-forms-builder.git@master#egg=django-forms-builder
 
