@@ -1,3 +1,5 @@
+-e .
+
 django-cms>=3.0
 
 # We originally created this fork for the "sites" repository to use
