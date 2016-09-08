@@ -37,6 +37,11 @@ See the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## History
 
+v1.1.0 (September 8, 2016):
+
+    * Adding migration required for Django CMS v3.3.1 and later, which is now
+      required for this app.
+
 v1.0.1:
 
     * Include README.md in the manifest.
