@@ -27,15 +27,6 @@ as django-cms plugins. You will need to override django-forms-builder's default 
 
 * Add `'forms_builder.forms', 'cmsplugin_forms_builder'` to your project's INSTALLED_APPS.
 
-* If you're using Django < 1.7 in conjunction with South, make sure that your SOUTH_MIGRATION_MODULES setting contains `'cmsplugin_forms_builder': 'cmsplugin_forms_builder.south_migrations'`, like so:
-
-```
-SOUTH_MIGRATION_MODULES = {
-    # your other south migration modules...
-    'cmsplugin_forms_builder': 'cmsplugin_forms_builder.south_migrations',
-}
-```
-
 * In order to submit your django-forms-builder forms via AJAX, you will need to override django-forms-builder's default `built_form.html` template. Since everyone's use case is different, this repository does not come with a predefined template in order to work "out-of-the-box". However, a sample [template](https://github.com/nimbis/cmsplugin-forms-builder/blob/develop/sample/templates/forms/includes/built_form.html) is provided to help you get started.
 
 Contributing
