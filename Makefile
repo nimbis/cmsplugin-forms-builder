@@ -1,5 +1,5 @@
 
-.PHONY: test pep8 clean coverage doc check-venv check-venv
+.PHONY: test pep8 clean coverage doc check-venv
 
 # clean out potentially stale pyc files
 clean:
