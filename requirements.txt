@@ -1,1 +1,9 @@
--r requirements/testing.txt
+-e .
+
+coverage
+setuptools-pep8
+sphinx
+sphinx-rtd-theme
+coveralls
+flake8
+git+https://github.com/dcramer/piplint.git#egg=piplint
