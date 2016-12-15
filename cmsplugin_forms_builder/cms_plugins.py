@@ -18,4 +18,5 @@ class FormBuilderPlugin(CMSPluginBase):
         context['form'] = instance.form
         return context
 
+
 plugin_pool.register_plugin(FormBuilderPlugin)
