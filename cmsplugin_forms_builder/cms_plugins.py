@@ -9,6 +9,7 @@ class FormBuilderPlugin(CMSPluginBase):
         Plugin class for form-builder forms.
     """
 
+    module = _("Forms")
     model = PluginForm
     name = _("Form")
     render_template = "forms/form_detail.html"
