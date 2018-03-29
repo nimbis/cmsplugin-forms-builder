@@ -87,7 +87,7 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'cmsplugin_forms_builder.urls'
+ROOT_URLCONF = 'tests.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'cmsplugin_forms_builder.wsgi.application'
@@ -121,8 +121,7 @@ INSTALLED_APPS = (
     'cms',
     'forms_builder.forms',
     'cmsplugin_forms_builder',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

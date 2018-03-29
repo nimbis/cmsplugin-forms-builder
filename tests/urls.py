@@ -1,11 +1,10 @@
-from django.conf.urls.defaults import patterns, include, url
+from django.conf.urls import include, url
 import forms_builder.forms.urls
 
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns(
-    '',
+urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^forms/', include(forms_builder.forms.urls)),
-)
+]
