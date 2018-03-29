@@ -37,6 +37,11 @@ See the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## History
 
+v1.1.1 (March 29, 2018):
+
+    * Organize the plugin in the admin UI with other form plugins.
+    * Display a useful string description of forms in the admin UI.
+
 v1.1.0 (September 8, 2016):
 
     * Adding migration required for Django CMS v3.3.1 and later, which is now
