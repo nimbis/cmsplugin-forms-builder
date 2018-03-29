@@ -23,7 +23,7 @@ pep8:
 # flake8
 #
 
-FLAKE8_OPTS = --max-complexity 10 --exclude='migrations,south_migrations'
+FLAKE8_OPTS=--max-complexity 10 --exclude='migrations,south_migrations'
 flake8: check-venv
 	flake8 $(FLAKE8_OPTS) .
 
@@ -38,12 +38,10 @@ test: check-venv clean
 # code coverage
 #
 
-COVERAGE_INCLUDE='cmsplugin_forms_builder/*'
-COVERAGE_OMIT='cmsplugin_forms_builder/migrations/*'
-
+COVERAGE_ARGS=--source=cmsplugin_forms_builder --omit=cmsplugin_forms_builder/tests.py
 coverage:
 	coverage erase
-	-coverage run --include=$(COVERAGE_INCLUDE) --omit=$(COVERAGE_OMIT) ./manage.py test
+	-coverage run $(COVERAGE_ARGS) ./manage.py test
 	coverage report
 	coverage html
 	@echo "See ./htmlcov/index.html for coverage report"
@@ -52,4 +50,21 @@ coverage:
 # TravisCI
 #
 
-travis-tests: pep8 flake8 test coverage
+travis-tests: check-venv
+	@echo "travis_fold:start:flake8"
+	make flake8
+	@echo "travis_fold:end:flake8"
+
+	@echo "travis_fold:start:pip_freeze"
+	pip freeze -l
+	@echo "travis_fold:end:pip_freeze"
+
+	coverage erase
+	@echo "travis_fold:start:test"
+	coverage run $(COVERAGE_ARGS) ./manage.py test --keepdb -v 2
+	@echo "travis_fold:end:test"
+
+	@echo "travis_fold:start:coverage"
+	coverage report
+	coverage html
+	@echo "travis_fold:end:coverage"
