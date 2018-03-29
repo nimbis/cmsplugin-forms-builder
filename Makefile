@@ -23,7 +23,7 @@ pep8:
 # flake8
 #
 
-FLAKE8_OPTS=--max-complexity 10 --exclude='migrations,south_migrations'
+FLAKE8_OPTS=--exclude=static,migrations,south_migrations,js,doc,travis_*
 flake8: check-venv
 	flake8 $(FLAKE8_OPTS) .
 
