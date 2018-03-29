@@ -12,7 +12,3 @@ before_script:
   - git clone https://github.com/nimbis/nifty.git ./.nifty
 script:
   - source .nifty/nifty-script
-  - verify_coverage_improvement
-  - make pep8
-  - make flake8
-  - make test

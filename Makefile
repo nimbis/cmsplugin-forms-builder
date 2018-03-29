@@ -1,5 +1,5 @@
 
-.PHONY: test pep8 clean coverage doc check-venv
+.PHONY: travis-tests test pep8 clean coverage doc check-venv
 
 # clean out potentially stale pyc files
 clean:
@@ -47,3 +47,9 @@ coverage:
 	coverage report
 	coverage html
 	@echo "See ./htmlcov/index.html for coverage report"
+
+#
+# TravisCI
+#
+
+travis-tests: pep8 flake8 test coverage
