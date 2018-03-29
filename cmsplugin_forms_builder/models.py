@@ -9,3 +9,6 @@ class PluginForm(CMSPlugin):
     """
 
     form = models.ForeignKey(Form)
+
+    def __str__(self):
+        return self.form.title
