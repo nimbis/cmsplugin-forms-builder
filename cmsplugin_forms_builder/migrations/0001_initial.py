@@ -15,8 +15,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='PluginForm',
             fields=[
-                ('cmsplugin_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin', on_delete='CASCADE')),
-                ('form', models.ForeignKey(to='forms.Form',on_delete='CASCADE')),
+                ('cmsplugin_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='cms.CMSPlugin', on_delete=models.CASCADE)),
+                ('form', models.ForeignKey(to='forms.Form', on_delete=models.CASCADE)),
             ],
             options={
                 'abstract': False,
