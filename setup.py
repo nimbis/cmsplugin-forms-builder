@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 # setup the project
 setup(
     name='cmsplugin-forms-builder',
-    version='1.1.3',
+    version='2.0.0',
     description='django-cms plugin for cmsplugin-forms-builder',
     long_description=open('README.md').read(),
     author='Nimbis Services, Inc.',
@@ -24,7 +24,7 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        'Django',
+        'Django>=2.0, <2.3',
         'django-cms>=3.3.1',
         'django-forms-builder',
     ],
